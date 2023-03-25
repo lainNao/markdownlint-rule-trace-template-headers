@@ -1,0 +1,23 @@
+{
+  "name": "markdownlint-rule-trace-template-headers",
+  "version": "0.9.0",
+  "description": "markdownlint custom rule that checks the headers is same to template",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lainNao/markdownlint-rule-trace-template-headers.git"
+  },
+  "bugs": "https://github.com/lainNao/markdownlint-rule-trace-template-headers.git",
+  "keywords": [
+    "markdownlint-rule"
+  ],
+  "author": "lainNao",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "minimatch": "^7.4.3"
+  }
+}

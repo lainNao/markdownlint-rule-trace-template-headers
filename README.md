@@ -1,0 +1,70 @@
+# markdownlint-rule-trace-template-headers
+
+A custom markdownlint rule that provides the functionality to check the headers of a Markdown file based on the table of contents of a template file, verifying the match and order of the headers.
+
+This package is compatible with markdownlint-cli2 and not markdownlint-cli.
+
+## Usage
+
+### CLI
+
+1. Install dependencies.
+
+    ```zsh
+    npm install -D markdownlint-cli2 @lainNao/markdownlint-trace-template-headers
+    ```
+
+1. Create config file.
+
+    ```zsh
+    touch .markdownlint-cli2.jsonc
+    ```
+
+1. Edit `.markdownlint-cli2.jsonc` .
+
+    ```jsonc
+    {
+      "customRules": [
+        "markdownlint-rule-trace-template-headers"
+      ],
+      "config": {
+        "markdownlint-rule-trace-template-headers": {
+          "templateFile": "YOUR_TEMPLATE_FILE.md", // template headers file
+          "includedFiles": ["*.md"], // files to lint
+          "excludedFiles": [] // files to exclude
+        }
+      }
+    }
+    ```
+
+1. Run lint.
+
+    ```zsh
+    npx markdownlint-cli2 SOME_MARKDOWN_FILE.md
+    ```
+
+### VSCode
+
+1. Install `markdownlint` in your VSCode extensions marketplace.
+1. Create and edit `.markdownlint-cli2.jsonc` like above.
+1. Verify the lint rule works works in Editor.
+
+## Other
+
+To disable the rule, edit `.markdownlint-cli2.jsonc` .
+
+```jsonc
+{
+  "customRules": [
+    "markdownlint-rule-trace-template-headers"
+  ],
+  "config": {
+    "markdownlint-rule-trace-template-headers": false    // change this value to falsy
+  }
+}
+```
+
+## TODO
+
+- Support multiple templates, auto fix, or more info at onError.
+- CI/CD. Add auto tests and auto versioning, updating changelog, release scripts.
