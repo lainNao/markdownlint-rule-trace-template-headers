@@ -1,6 +1,6 @@
 # markdownlint-rule-trace-template-headers
 
-A custom markdownlint rule that provides the functionality to check the headers of a Markdown file based on the table of contents of a template file, verifying the match and order of the headers.
+A custom markdownlint rule that provides the functionality to check the headers of a Markdown file based on the headers of a template file, verifying the match and order of the headers.
 
 This package is compatible with markdownlint-cli2 and not markdownlint-cli.
 
