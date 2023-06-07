@@ -10,13 +10,13 @@ This package is compatible with markdownlint-cli2 and not markdownlint-cli.
 
 1. Install dependencies.
 
-    ```zsh
+    ```shell
     npm install -D markdownlint-cli2 @lainNao/markdownlint-trace-template-headers
     ```
 
 1. Create config file.
 
-    ```zsh
+    ```shell
     touch .markdownlint-cli2.jsonc
     ```
 
@@ -39,7 +39,7 @@ This package is compatible with markdownlint-cli2 and not markdownlint-cli.
 
 1. Run lint.
 
-    ```zsh
+    ```shell
     npx markdownlint-cli2 SOME_MARKDOWN_FILE.md
     ```
 
@@ -67,4 +67,6 @@ To disable the rule, edit `.markdownlint-cli2.jsonc` .
 ## TODO
 
 - Support multiple templates, auto fix, or more info at onError.
-- CI/CD. Add auto tests and auto versioning, updating changelog, release scripts.
+- Improve CI/CD. Add auto tests and auto versioning, updating changelog, release scripts.
+  - Know semantic release usage...
+  - comparison between other tools in table format
