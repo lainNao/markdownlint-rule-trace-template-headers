@@ -7,8 +7,8 @@ module.exports = {
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog", // added: for updating the changelog
-    "@semantic-release/npm",
     "@semantic-release/git", // added: for updating the version in the package.json
-    "@semantic-release/github"
+    "@semantic-release/github",
+    "@semantic-release/npm",
   ]
 }
