@@ -71,5 +71,4 @@ To disable the rule, edit `.markdownlint-cli2.jsonc` .
   - Know semantic release usage...
   - comparison between other tools in table format
 - Create CONTRIBUTION.md
-- Create examples
 - Config to select error/warn
