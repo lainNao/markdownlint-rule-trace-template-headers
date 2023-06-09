@@ -27,6 +27,8 @@
     "minimatch": "^7.4.3"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/markdownlint": "^0.18.0",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^20.2.5",
