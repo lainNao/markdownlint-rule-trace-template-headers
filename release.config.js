@@ -8,9 +8,9 @@ module.exports = {
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog", // added: for updating the changelog
     "@semantic-release/npm",
-    "@semantic-release/git", // added: for updating the version in the package.json
+    "@semantic-release/git", 
     [
-      "@semantic-release/git",
+      "@semantic-release/git", // added: for updating the version in the package.json
       {
         assets: ["CHANGELOG.md", "package.json"],
         message:
