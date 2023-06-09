@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
       - uses: pnpm/action-setup@v2.2.2
         with:
-          version: 7.30.3
+          version: 8.6.1
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Release
