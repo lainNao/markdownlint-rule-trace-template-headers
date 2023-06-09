@@ -70,3 +70,6 @@ To disable the rule, edit `.markdownlint-cli2.jsonc` .
 - Improve CI/CD. Add auto tests and auto versioning, updating changelog, release scripts.
   - Know semantic release usage...
   - comparison between other tools in table format
+- Create CONTRIBUTION.md
+- Create examples
+- Config to select error/warn
