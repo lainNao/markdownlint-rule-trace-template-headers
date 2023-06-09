@@ -1,0 +1,12 @@
+{
+  "customRules": [
+    "markdownlint-rule-trace-template-headers"
+  ],
+  "config": {
+    "markdownlint-rule-trace-template-headers": {
+      "templateFile": "./MY_TEMPLATE_FILE.md", // template headers file
+      "includedFiles": ["MY_TARGET_FILE.md"], // files to lint
+      "excludedFiles": []
+    }
+  }
+}
