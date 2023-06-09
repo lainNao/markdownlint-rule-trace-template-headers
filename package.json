@@ -1,5 +1,6 @@
 {
   "name": "markdownlint-rule-trace-template-headers",
+  "private": true,
   "version": "0.9.0",
   "description": "markdownlint custom rule that checks the headers is same to template",
   "license": "MIT",
