@@ -6,6 +6,7 @@ import { assertMarkdownLintRuleTraceTemplateHeadersConfig } from "./config";
 import { isPathMatchArray } from "../helpers/isPathMatch";
 import { isHeaderLine } from "../helpers/isHeaderLine";
 import { getAppRootPath } from "../helpers/getAppRootPath";
+import { getMarkdownHeaderLines } from "../helpers/getMarkdownHeaderLines";
 
 // TODO: assert〜の中身も全部onErrorにしたい
 // TODO: check if template file existsの上も全部バリデーションだな。バリデーションにも種類があるのか、、
@@ -53,26 +54,22 @@ export const ruleFunction: MarkdownLintRule["function"] = (
   }
 
   // get template headers
-  const templateHeaders: string[] = [];
-  fs.readFileSync(targetTemplateFile, "utf8")
-    .split(/\r?\n/)
-    .forEach((line: string, index: number) => {
-      if (isHeaderLine(line)) {
-        templateHeaders.push(line);
-      }
-    });
+  const templateHeaders: string[] = getMarkdownHeaderLines({
+    fileContent: fs.readFileSync(targetTemplateFile, "utf8"),
+  });
 
   // check if headers are equal
   const foundedHeaders = [];
   params.lines.forEach((line, lineIndex) => {
     if (isHeaderLine(line)) {
-      const targetHeader = templateHeaders[foundedHeaders.length];
-      if (targetHeader !== line) {
+      const currentHeaderLine = line;
+      const expectedHeaderLine = templateHeaders[foundedHeaders.length];
+      if (expectedHeaderLine !== currentHeaderLine) {
         onError({
           lineNumber: lineIndex + 1,
           detail: `Template file '${JSON.stringify(
             targetTemplateFile
-          )}' and current file have different headers or different headers order. Expected: ${targetHeader}, given: ${line}`,
+          )}' and current file have different headers or different headers order. Expected: ${expectedHeaderLine}, given: ${line}`,
           context: params.lines[lineIndex],
         });
         return;
