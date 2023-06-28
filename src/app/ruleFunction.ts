@@ -59,7 +59,7 @@ export const ruleFunction: MarkdownLintRule["function"] = (
   });
 
   // check if headers are equal
-  const foundedHeaders = [];
+  const foundedHeaders: string[] = [];
   params.lines.forEach((line, lineIndex) => {
     if (isHeaderLine(line)) {
       const currentHeaderLine = line;
