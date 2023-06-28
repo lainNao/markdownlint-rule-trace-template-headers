@@ -29,9 +29,14 @@ This package is compatible with markdownlint-cli2 and not markdownlint-cli.
       ],
       "config": {
         "markdownlint-rule-trace-template-headers": {
-          "templateFile": "YOUR_TEMPLATE_FILE.md", // template headers file
-          "includedFiles": ["*.md"], // files to lint
-          "excludedFiles": [] // files to exclude
+          "settings": [
+            {
+              "templateFile": "YOUR_TEMPLATE_FILE.md", // template headers file
+              "includedFiles": ["*.md"], // files to lint
+              "excludedFiles": [] // files to exclude
+            },
+            ...
+          ]
         }
       }
     }

@@ -1,12 +1,20 @@
 {
-  "customRules": [
-    "markdownlint-rule-trace-template-headers"
-  ],
+  "customRules": ["markdownlint-rule-trace-template-headers"],
   "config": {
     "markdownlint-rule-trace-template-headers": {
-      "templateFile": "./MY_TEMPLATE_FILE.md", // template headers file
-      "includedFiles": ["MY_TARGET_FILE.md"], // files to lint
-      "excludedFiles": []
+      "IS_DEV": true,
+      "settings": [
+        {
+          "templateFile": "./MY_TEMPLATE_FILE.md", // template headers file
+          "includedFiles": ["MY_TARGET_FILE.md"], // files to lint
+          "excludedFiles": [""]
+        },
+        {
+          "templateFile": "./MY_TEMPLATE_FILE2.md", // template headers file
+          "includedFiles": ["MY_TARGET_FILE2.md"], // files to lint
+          "excludedFiles": [""]
+        }
+      ]
     }
   }
 }

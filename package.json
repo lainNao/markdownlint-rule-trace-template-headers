@@ -2,7 +2,8 @@
   "name": "markdownlint-rule-trace-template-headers",
   "description": "markdownlint custom rule that checks the headers is same to template",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
+  "version": "2.0.0",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,9 +24,11 @@
   },
   "dependencies": {
     "app-root-path": "^3.1.0",
+    "findup-sync": "^5.0.0",
     "minimatch": "^7.4.3"
   },
   "devDependencies": {
+    "@types/findup-sync": "^4.0.2",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^20.2.5",
     "markdownlint": "^0.29.0",
