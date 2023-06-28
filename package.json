@@ -24,11 +24,9 @@
   },
   "dependencies": {
     "app-root-path": "^3.1.0",
-    "findup-sync": "^5.0.0",
     "minimatch": "^7.4.3"
   },
   "devDependencies": {
-    "@types/findup-sync": "^4.0.2",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^20.2.5",
     "markdownlint": "^0.29.0",
