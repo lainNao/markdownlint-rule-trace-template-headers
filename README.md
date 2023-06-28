@@ -22,6 +22,8 @@ This package is compatible with markdownlint-cli2 and not markdownlint-cli.
 
 1. Edit `.markdownlint-cli2.jsonc` .
 
+    - if markdownlint-rule-trace-template-headers is v2 or higher
+
     ```jsonc
     {
       "customRules": [
@@ -37,6 +39,23 @@ This package is compatible with markdownlint-cli2 and not markdownlint-cli.
             },
             ...
           ]
+        }
+      }
+    }
+    ```
+
+    - if markdownlint-rule-trace-template-headers is v1 or lower
+
+    ```jsonc
+    {
+      "customRules": [
+        "markdownlint-rule-trace-template-headers"
+      ],
+      "config": {
+        "markdownlint-rule-trace-template-headers": {
+          "templateFile": "YOUR_TEMPLATE_FILE.md", // template headers file
+          "includedFiles": ["*.md"], // files to lint
+          "excludedFiles": [] // files to exclude
         }
       }
     }
