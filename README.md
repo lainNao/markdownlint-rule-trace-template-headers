@@ -90,11 +90,6 @@ To disable the rule, edit `.markdownlint-cli2.jsonc` .
 
 ## TODO
 
-- Support multiple templates, auto fix, or more info at onError.
 - Improve CI/CD. Add auto tests and auto versioning, updating changelog, release scripts.
-  - ~~Know semantic release usage...~~
-    - stop using semantic-release
-      - githubのセキュリティの設定を弱めないと自動でpackage.jsonのversionフィールドやCHANGELOG.mdにプッシュしてくれないっぽく、微妙な気がするので
-  - comparison between other tools in table format
 - Create CONTRIBUTION.md
 - Config to select error/warn

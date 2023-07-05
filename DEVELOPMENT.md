@@ -1,5 +1,9 @@
 # How to development
 
+## 一般
+
+- pnpm i 〜 でライブラリインストール
+
 ## 動作確認
 
 cd example
@@ -8,7 +12,8 @@ npm run reinstall
 
 ## Release
 
-バージョンアップしたいコミットをしたら、その後に git tag vX.X.X でタグ付け
+バージョンアップしたいコミットをする（package.jsonのversion更新もする）
+その後に git tag vX.X.X でタグ付け
 そしてプッシュしてmainにマージしておく
 そしてnpm publish ./
 
@@ -23,5 +28,4 @@ Set as the latest releaseにチェックを入れている状態で Publish Rele
 
 ## TODO
 
-- delete semantic release（使いづらい）
 - other
