@@ -3,7 +3,7 @@
   "description": "markdownlint custom rule that checks the headers is same to template",
   "license": "MIT",
   "main": "dist/src/index.js",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
