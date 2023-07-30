@@ -15,7 +15,8 @@ npm run reinstall
 バージョンアップしたいコミットをする（package.jsonのversion更新もする）
 その後に git tag vX.X.X でタグ付け
 そしてプッシュしてmainにマージしておく
-そしてnpm publish ./
+タグもプッシュしておく　git push origin --tags
+そしてnpm publish
 
 そしてgithubで登録
 <https://github.com/lainNao/markdownlint-rule-trace-template-headers/releases>
@@ -29,3 +30,4 @@ Set as the latest releaseにチェックを入れている状態で Publish Rele
 ## TODO
 
 - other
+- GitHubのPackages部分をnpmと連携 <https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry>
